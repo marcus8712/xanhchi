@@ -10,7 +10,7 @@
     <meta name="author" content="Hoiio Pte Lte.">
     <meta name="keywords" content="design, standards, bootstrap, flat, ui, ux" />
 
-    <title>Xanh Chi</title>
+    <title>Single Xanh Chi</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
@@ -33,7 +33,7 @@
 <body>
 
     
-    <div id="many-trees" class="container">
+    <div id="single-tree" class="container">
         <div class="row">
             <div class="col-md-2 navbar left-col">
                 <div class="navbar-header">
@@ -65,18 +65,40 @@
 
 
             <div class="col-md-10 right-col">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="single.html"><img src="present/1e.jpg"/></a>
+                <div class="col-md-6 col-sm-12">
+                    <img src="present/1c.jpg"/>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="single.html"><img src="present/2.jpg"/></a>
+                <div class="col-md-5 col-sm-12">
+                    <div class="tree-summary">
+                        <div class="tree-info">
+                            <div class="tree-name">
+                                <h4>Đuôi Phụng Xanh Nõn</h4>
+                                <span class="rating"><i class="h-icon h-icon-star"></i>
+                                    <i class="h-icon h-icon-star"></i>
+                                    <i class="h-icon h-icon-star"></i>
+                                    <i class="h-icon h-icon-star-half-alt"></i>
+                                </span>
+                            </div>
+                            <div class="tree-story">
+                                <p></p>
+                            </div>
+                            <hr>
+                            <div class="tree-price">
+                                <span class="amount">25,000₫</span>
+                                <span class="pull-right status"><i class=
+    "h-icon h-icon-basket-circled"></i></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="tree-more-info">
+                            <p><span>Loại chậu:</span> gốm thường </p>
+                            <p><span>Loại cây:</span> đặc điểm cây </p>
+                            <p><span>Kích thước chậu:</span> 185 x 250 mm, 256 pp</p>
+                            <p><span>Cách chăm sóc:</span> Sen đá viền hồng như cô gái tuổi 18 vậy. Một chút ngại ngùng, một chút bẻn lẻn, mặt ửng đó khi bị trêu ghẹo vậy. </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="single.html"><img src="present/3.jpg"/></a>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <a href="single.html"><img src="present/4.jpg"/></a>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -120,7 +142,17 @@
         });
     });
     </script>
-  
+    <script>
+        $(function() {
+            $('input[name="daterange"]').daterangepicker({
+                timePicker: true,
+                timePickerIncrement: 30,
+                locale: {
+                    format: 'MM/DD/YYYY h:mm A'
+                }
+            });
+        });    
+    </script>    
     <script>
         $('.selectpicker').selectpicker();
         $(function(argument) {

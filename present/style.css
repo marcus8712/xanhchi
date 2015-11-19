@@ -1,0 +1,126 @@
+/*-----------------------------------*\
+  BASE
+\*-----------------------------------*/
+
+html {
+  font: 100%/1.5 "Roboto", Verdana, sans-serif;
+  color: #3d464d;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+
+  overflow: hidden-x;
+
+  /* Centering in The Unknown */
+  text-align: center;
+}
+
+@media (min-width: 650px) {
+  html {
+    height: 100%;
+  }
+
+  html:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+  }
+
+  body {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 100px;
+    
+  }
+}
+
+.demo-logo img{
+    width: 15%;
+    height: 15%;
+}
+
+.demo-name-box {
+  padding: 4.5rem 1.5rem 4.5rem 1.5rem;
+}
+
+.demo-name {
+  margin-bottom: 1rem;
+  font-size: 4rem;
+  font-weight: 100;
+  line-height: 1;
+  letter-spacing: -.05em;
+  font-family: "Roboto"
+}
+
+.demo-subname {
+  margin-bottom: .75rem;
+  font-weight: 400;
+  font-size: 0.75em;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.demo-btn{
+  padding: .75rem;
+  margin: .375rem;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 2px solid transparent;
+  border-color: #000;
+  line-height: 1;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.demo-btn:focus {
+    outline: none;
+}
+
+.demo-btn:hover{
+    color: #fff;
+    background-color: #0190de;
+    border-color: #0190de;
+    
+}
+
+
+/*-----------------------------------*\
+  $TYPOGRAPHY
+\*-----------------------------------*/
+
+
+
+
+@media (min-width: 650px) {
+  .demo-name {
+    font-size: 6rem;
+    line-height: 1;
+  }
+    
+  .demo-logo img{
+    width: 10%;
+    height: 10%;
+  }
+}
+
+
+@media (max-width: 649px) {
+
+    
+  .demo-logo{
+    margin-top: 70px;
+  }
+}
+
+hr {
+  border: none;
+  margin-top: -1px;
+  height: 1px;
+  background-color: #c0c8c9;
+  background-image: -webkit-linear-gradient(0deg, #fff, #c0c8c9, #fff);
+}
