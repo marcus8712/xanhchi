@@ -143,6 +143,9 @@ li.active a{
     margin-top: 5px;
 }
 
+#many-trees .meta{
+        display: none;
+    }
 
 
 
